@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" role="HTML">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,36 +18,37 @@
 
     <div class="signup-container" id="signup-container">
       <div class="signup-container-left">
-        <h1>Stay updated!</h1>
-        <p>Join the 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
+        <h1 role="Heading">Stay updated!</h1>
+        <p role="Paragraph">
+          Join the 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul role="List">
           <li>
-            <img src="./assets/images/icon-list.svg" class="icon" /> Product
-            Discovery and building what matters
+            <img src="./assets/images/icon-list.svg" class="icon" alt="icon" />
+            Product Discovery and building what matters
           </li>
           <li>
-            <img src="./assets/images/icon-list.svg" class="icon" /> Measuring
-            to ensure updates are a success
+            <img src="./assets/images/icon-list.svg" class="icon" alt="icon" />
+            Measuring to ensure updates are a success
           </li>
           <li>
-            <img src="./assets/images/icon-list.svg" class="icon" /> And much
-            more!
+            <img src="./assets/images/icon-list.svg" class="icon" alt="icon" />
+            And much more!
           </li>
         </ul>
 
-        <label for="email">Email address</label>
+        <label for="email" role="Label">Email address</label>
         <input
           type="email"
           id="email"
           name="email"
           placeholder="email@company.com"
           required
+          role="Input"
         />
-        <button type="submit-btn" id="subscribe-btn">
-          Subscribe to monthly newsletter
-        </button>
+        <button id="subscribe-btn">Subscribe to monthly newsletter</button>
       </div>
-      <div class="signup-container-right">
+      <div class="signup-container-right" role="container">
         <img
           src="./assets/images/illustration-sign-up-desktop.svg"
           alt="Illistration"
@@ -58,7 +59,11 @@
     <!-- Thank you message section -->
 
     <div class="thank-you-container hidden" id="thank-you-container">
-      <img src="./assets/images/icon-success.svg" class="icon-large" />
+      <img
+        src="./assets/images/icon-success.svg"
+        class="icon-large"
+        alt="large icon"
+      />
       <h1>Thanks for Subscribing!</h1>
       <p>
         A confirmation email has been sent to
